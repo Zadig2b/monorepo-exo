@@ -21,21 +21,15 @@ git clone git@github.com:<user>/monorepo-exo.git
 cd monorepo-exo
 ```
 
-### 2. Ajouter le dépôt distant à importer
+### 2. Ajouter le dépôt distant à importer et importer le contenu dans un sous-dossier avec historique
 
 ```bash
 git remote add js1 git@github.com:<user>/js1.git
 git fetch js1
-```
-
-### 3. Importer le contenu dans un sous-dossier avec historique
-
-```bash
 git read-tree --prefix=js1/ -u js1/main  # ou autre branche ex: js1/feature
-git commit -m "Import du projet js1 dans le dossier js1/"
 ```
 
-> 🔁 Tu peux répéter les étapes 2 et 3 pour d'autres projets (`js2`, `react-demo`, etc.).
+> 🔁 Tu peux répéter cette étape pour d'autres projets (`js2`, `react-demo`, etc.).
 
 ---
 
@@ -72,7 +66,7 @@ Puis recommencer l'import depuis la branche désirée.
 
 ## 🚀 Astuce : tableau de bord avec GitHub Pages
 
-Tu peux créer un `index.html` à la racine pour accéder à chaque projet en vignette (voir `generate-dashboard.js`).
+Tu peux créer un `index.html` à la racine pour accéder à chaque projet en vignette (voir [⚙️ Script Dashboard](DOC_GENERATE_DASHBOARD.md)).
 
 ---
 

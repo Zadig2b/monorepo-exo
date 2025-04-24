@@ -8,10 +8,7 @@ Bienvenue dans ce **monorepo** regroupant l'ensemble des exercices réalisés da
 
 - [📄 Présentation du projet](#-présentation-du-projet)
 - [🗂️ Fonctionnement du monorepo](#️-fonctionnement-du-monorepo)
-- [📁 Structure recommandée](#-structure-recommandée)
-- [🛠️ Commandes utiles](#️-commandes-utiles)
-- [🧪 Astuce : lancer le dashboard en local](#-astuce--lancer-le-dashboard-en-local)
-- [🚀 Accès GitHub Pages](#-accès-github-pages)
+- [📁 Structure](#-structure)
 - [📚 Documentation](#-documentation)
 - [📅 Formation CDA Simplon](#-formation-cda-simplon)
 
@@ -34,12 +31,12 @@ Ce dépôt centralise tous les exercices et projets réalisés durant la formati
 
 ---
 
-## 📁 Structure recommandée
+## 📁 Structure
 
 ```
 monorepo-exo/
 ├── index.html              # Tableau de bord principal
-├── script.js               # Généré automatiquement
+├── script.js               # Généré via generate-dashboard.js
 ├── style.css               # Mise en forme optionnelle
 ├── generate-dashboard.js   # Script Node.js de génération
 ├── js1/
@@ -51,77 +48,18 @@ monorepo-exo/
 
 ---
 
-## 🛠️ Commandes utiles
-
-### Cloner le dépôt
-
-```bash
-git clone git@github.com:<ton-user>/monorepo-exo.git
-cd monorepo-exo
-```
-
-
-### Ajouter un nouveau projet depuis un dépôt distant (avec historique)
-
-```bash
-git remote add js1 git@github.com:<user>/js1.git
-git fetch js1
-git read-tree --prefix=js1/ -u js1/main  # ou autre branche
-git commit -m "Import du projet js1"
-```
-
----
-
-### Générer le tableau de bord manuellement
-
-```bash
-node generate-dashboard.js
-```
-
-Ou si tu as un `package.json` :
-
-```bash
-npm run build:dashboard
-```
-
-## 🧪 Astuce : lancer le dashboard en local
-
-```bash
-npx live-server
-# ou
-npx http-server
-```
-
----
-
-## 🚀 Accès GitHub Pages
-
-Une fois déployé, ton tableau de bord est accessible ici :
-
-```
-https://<ton-user>.github.io/monorepo-exo/
-```
-
-Et chaque projet :
-```
-https://<ton-user>.github.io/monorepo-exo/js1/
-https://<ton-user>.github.io/monorepo-exo/js2/
-```
-
----
-
 ## 📚 Documentation
 
 - [📦 Tutoriel Monorepo](docs/TUTO_MONOREPO.md)
 - [⚙️ Script Dashboard](docs/DOC_GENERATE_DASHBOARD.md)
 - [🪝 Hook Git `pre-commit`](docs/DOC_HOOK_PRE_COMMIT.md)
 
-
 ---
 
 ## 📅 Formation CDA Simplon
 
 Ce projet s’inscrit dans la dynamique d’apprentissage autour du développement web fullstack, avec des technologies telles que :
+
 - HTML/CSS/JavaScript
 - Node.js
 - React / Angular

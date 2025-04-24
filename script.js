@@ -2,6 +2,11 @@
 
 const projects = [
   {
+    "name": "Array filter",
+    "folder": "array-filter",
+    "path": "projets\\array-filter\\index.html"
+  },
+  {
     "name": "Form",
     "folder": "form",
     "path": "projets\\form\\index.html"
