@@ -6,20 +6,8 @@ const projects = [
     "folder": "array-filter"
   },
   {
-    "name": "Exo1",
-    "folder": "exo1"
-  },
-  {
     "name": "Game heroes",
     "folder": "game-heroes"
-  },
-  {
-    "name": "Js1",
-    "folder": "js1"
-  },
-  {
-    "name": "Js2",
-    "folder": "js2"
   },
   {
     "name": "Meal api",
@@ -30,8 +18,16 @@ const projects = [
     "folder": "news-frontend"
   },
   {
+    "name": "Perfume card design",
+    "folder": "perfume-card-design"
+  },
+  {
     "name": "Pierre feuille",
     "folder": "pierre-feuille"
+  },
+  {
+    "name": "Plus ou moins",
+    "folder": "plus-ou-moins"
   },
   {
     "name": "Positions css",
@@ -42,8 +38,8 @@ const projects = [
     "folder": "star-wars"
   },
   {
-    "name": "Todolist2",
-    "folder": "todolist2"
+    "name": "Todolist",
+    "folder": "todolist"
   }
 ];
 
