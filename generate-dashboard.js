@@ -6,28 +6,35 @@ const ROOT_DIR = ".";
 const outputScriptPath = join(ROOT_DIR, "script.js");
 
 const folders = readdirSync(ROOT_DIR, { withFileTypes: true })
-  .filter(
-    (dirent) =>
-      dirent.isDirectory() &&
-      existsSync(join(ROOT_DIR, dirent.name, "index.html"))
-  )
+  .filter((dirent) => {
+    if (!dirent.isDirectory()) return false;
+    const folderPath = join(ROOT_DIR, dirent.name);
+    return (
+      existsSync(join(folderPath, "index.html")) ||
+      existsSync(join(folderPath, "public", "index.html"))
+    );
+  })
   .map((dirent) => dirent.name);
 
-// Génération du contenu JS
-const output = `// script.js - Généré automatiquement
+const projects = folders.map((f) => {
+  const path = existsSync(join(ROOT_DIR, f, "index.html"))
+    ? `${f}/index.html`
+    : `${f}/public/index.html`;
 
-const projects = ${JSON.stringify(
-  folders.map((f) => ({
+  return {
     name: f.replace(/[-_]/g, " ").replace(/^\w/, (c) => c.toUpperCase()),
     folder: f,
-  })),
-  null,
-  2
-)};
+    path,
+  };
+});
+
+const output = `// script.js - Généré automatiquement
+
+const projects = ${JSON.stringify(projects, null, 2)};
 
 const grid = document.getElementById("projects-grid");
 
-projects.forEach(({ name, folder }) => {
+projects.forEach(({ name, folder, path }) => {
   const col = document.createElement("div");
   col.className = "col";
   col.innerHTML = \`
@@ -35,7 +42,7 @@ projects.forEach(({ name, folder }) => {
       <div class="card-body d-flex flex-column">
         <h5 class="card-title">\${name}</h5>
         <p class="card-text text-muted">Voir le projet "\${folder}"</p>
-        <a href="\${folder}/index.html" class="btn btn-primary mt-auto">Ouvrir</a>
+        <a href="\${path}" class="btn btn-primary mt-auto">Ouvrir</a>
       </div>
     </div>
   \`;
@@ -44,4 +51,4 @@ projects.forEach(({ name, folder }) => {
 `;
 
 writeFileSync(outputScriptPath, output);
-console.log(`✅ script.js généré avec ${folders.length} projets.`);
+console.log(`✅ script.js généré avec ${projects.length} projets.`);
