@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Démo Positions CSS</title>
+    <link rel="stylesheet" href="style.css" />
+ 
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+
+    <!-- Intro section -->
+    <div class="intro-wrapper">
+      <div class="intro-text">
+        <h1>Démo des positions CSS</h1>
+        <p>
+          Chaque forme contient un menu déroulant pour changer sa position CSS.
+          Scrolle la page pour tester sticky et fixed !
+        </p>
+      </div>
+      <div class="intro-image">
+        <img src="images/details.png" alt="Schéma des positions CSS" />
+      </div>
+    </div>
+<div class="btn-wrapper">
+    <button onclick="resetPositions()">Réinitialiser les positions</button>
+    <button onclick="addShape()">Ajouter une forme</button>
+    <button onclick="deleteAddedShapes()">Supprimer les formes ajoutées</button>
+  </div>
+    <div class="scroll-zone">
+      <div class="container" id="container">
+        <div class="shape-container">
+          <div id="square" class="shape static">
+            <select onchange="changePosition('square', this.value)">
+              <option value="static">static</option>
+              <option value="relative">relative</option>
+              <option value="absolute">absolute</option>
+              <option value="fixed">fixed</option>
+              <option value="sticky">sticky</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="shape-container">
+          <div id="circle" class="shape static">
+            <select onchange="changePosition('circle', this.value)">
+              <option value="static">static</option>
+              <option value="relative">relative</option>
+              <option value="absolute">absolute</option>
+              <option value="fixed">fixed</option>
+              <option value="sticky">sticky</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

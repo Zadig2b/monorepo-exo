@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Démo Interactive: position relative</title>
+  <link rel="stylesheet" href="relative.css" />
+</head>
+<body>
+  <div id="navbar-container"></div>
+
+  <h1>Démo interactive : <code>position: relative</code></h1>
+
+  <div class="label">
+    🟩 Le bloc rouge se déplace <strong>visuellement</strong> sans sortir du flux. <br>
+    🔲 Le cadre rouge en pointillé montre sa <strong>position normale</strong>.
+  </div>
+
+  <div class="container">
+    <div class="ghost-placeholder"></div>
+    <div id="box" class="relative-box">Relative</div>
+  </div>
+
+  <div class="controls">
+    <label for="topRange">Décalage vertical (top) : <span id="topValue">0</span>px</label>
+    <input type="range" id="topRange" min="-100" max="100" value="0">
+
+    <label for="leftRange">Décalage horizontal (left) : <span id="leftValue">0</span>px</label>
+    <input type="range" id="leftRange" min="-100" max="100" value="0">
+  </div>
+
+  <script>
+    const box = document.getElementById('box');
+    const topRange = document.getElementById('topRange');
+    const leftRange = document.getElementById('leftRange');
+    const topValue = document.getElementById('topValue');
+    const leftValue = document.getElementById('leftValue');
+
+    function updatePosition() {
+      const top = topRange.value;
+      const left = leftRange.value;
+      box.style.top = top + 'px';
+      box.style.left = left + 'px';
+      topValue.textContent = top;
+      leftValue.textContent = left;
+    }
+
+    topRange.addEventListener('input', updatePosition);
+    leftRange.addEventListener('input', updatePosition);
+
+    updatePosition(); // Initial call
+  </script>
+      <script src="script.js"></script>
+</body>
+</html>

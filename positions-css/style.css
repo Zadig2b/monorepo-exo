@@ -1,0 +1,146 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  height: 2000px;
+  background: #f0f0f0;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.btn-wrapper {
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(26, 62, 139);
+  font-weight: bold ;
+  color: white;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(34, 114, 184);
+
+}
+
+
+.scroll-zone {
+  height: 400px;
+  overflow-y: auto;
+  border: 2px dashed #aaa;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  min-height: 600px;
+}
+
+.shape-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shape {
+  width: 120px;
+  height: 120px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid #333;
+}
+
+.shape select {
+  width: 100px;
+}
+
+#square {
+  background-color: red;
+}
+
+#circle {
+  background-color: blue;
+  border-radius: 50%;
+}
+
+/* Position classes */
+.static {
+  position: static;
+}
+
+.relative {
+  position: relative;
+  top: 25px;
+  left: 50px;
+  box-shadow: 0 0 0 4px green inset;
+}
+
+.absolute {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  box-shadow: 0 0 0 4px orange inset;
+}
+
+.fixed {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  box-shadow: 0 0 0 4px black inset;
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+  background-color: purple;
+  box-shadow: 0 0 0 4px yellow inset;
+}
+
+.intro-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 30px;
+}
+
+.intro-image img {
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .intro-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-text,
+  .intro-image {
+    width: 100%;
+  }
+
+  .intro-image img {
+    width: 100%;
+    height: auto;
+  }
+}
