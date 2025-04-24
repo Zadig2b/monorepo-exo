@@ -2,8 +2,8 @@
 import { readdirSync, existsSync, writeFileSync } from "fs";
 import { join } from "path";
 
-const ROOT_DIR = ".";
-const outputScriptPath = join(ROOT_DIR, "script.js");
+const ROOT_DIR = "projets";
+const outputScriptPath = join(".", "script.js");
 
 const folders = readdirSync(ROOT_DIR, { withFileTypes: true })
   .filter((dirent) => {
@@ -17,14 +17,14 @@ const folders = readdirSync(ROOT_DIR, { withFileTypes: true })
   .map((dirent) => dirent.name);
 
 const projects = folders.map((f) => {
-  const path = existsSync(join(ROOT_DIR, f, "index.html"))
+  const localPath = existsSync(join(ROOT_DIR, f, "index.html"))
     ? `${f}/index.html`
     : `${f}/public/index.html`;
 
   return {
     name: f.replace(/[-_]/g, " ").replace(/^\w/, (c) => c.toUpperCase()),
     folder: f,
-    path,
+    path: join("projets", localPath),
   };
 });
 

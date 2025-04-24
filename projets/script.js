@@ -2,9 +2,9 @@
 
 const projects = [
   {
-    "name": "Form",
-    "folder": "form",
-    "path": "projets\\form\\index.html"
+    "name": "Array filter",
+    "folder": "array-filter",
+    "path": "projets\\array-filter\\index.html"
   },
   {
     "name": "Game heroes",
@@ -40,11 +40,6 @@ const projects = [
     "name": "Positions css",
     "folder": "positions-css",
     "path": "projets\\positions-css\\index.html"
-  },
-  {
-    "name": "Recipe",
-    "folder": "recipe",
-    "path": "projets\\recipe\\index.html"
   },
   {
     "name": "Star wars",
