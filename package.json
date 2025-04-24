@@ -1,0 +1,14 @@
+{
+    "name": "monorepo-exo",
+    "version": "1.0.0",
+    "description": "Tableau de bord GitHub Pages pour les exercices en monorepo",
+    "main": "generate-dashboard.js",
+    "type": "module",
+    "scripts": {
+      "build:dashboard": "node generate-dashboard.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT"
+  }
+  
