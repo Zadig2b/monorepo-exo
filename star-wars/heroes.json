@@ -1,0 +1,84 @@
+{
+  "heroes": [
+    {
+      "name": "Luke Skywalker",
+      "side": "Lumineux",
+      "planet": "Tatooine",
+      "species": "Humain",
+      "lightsaberColor": "Bleu",
+      "masteryOfForce": "Avancé"
+    },
+    {
+      "name": "Darth Vader",
+      "side": "Obscur",
+      "planet": "Tatooine",
+      "species": "Humain",
+      "lightsaberColor": "Rouge",
+      "masteryOfForce": "Maîtrise totale"
+    },
+    {
+      "name": "Yoda",
+      "side": "Lumineux",
+      "planet": "Dagobah",
+      "species": "Yoda's Species",
+      "lightsaberColor": "Vert",
+      "masteryOfForce": "Légendaire"
+    },
+    {
+      "name": "Han Solo",
+      "side": "Lumineux",
+      "planet": "Corellia",
+      "species": "Humain",
+      "lightsaberColor": "Aucun",
+      "masteryOfForce": "Aucun"
+    },
+    {
+      "name": "Leia Organa",
+      "side": "Lumineux",
+      "planet": "Alderaan",
+      "species": "Humain",
+      "lightsaberColor": "Bleu",
+      "masteryOfForce": "Débutante"
+    },
+    {
+      "name": "Emperor Palpatine",
+      "side": "Obscur",
+      "planet": "Naboo",
+      "species": "Humain",
+      "lightsaberColor": "Rouge",
+      "masteryOfForce": "Maîtrise totale"
+    },
+    {
+      "name": "Chewbacca",
+      "side": "Lumineux",
+      "planet": "Kashyyyk",
+      "species": "Wookiee",
+      "lightsaberColor": "Aucun",
+      "masteryOfForce": "Aucun"
+    },
+    {
+      "name": "Obi-Wan Kenobi",
+      "side": "Lumineux",
+      "planet": "Stewjon",
+      "species": "Humain",
+      "lightsaberColor": "Bleu",
+      "masteryOfForce": "Avancé"
+    },
+    {
+      "name": "R2-D2",
+      "side": "Lumineux",
+      "planet": "Naboo",
+      "species": "Droid",
+      "lightsaberColor": "Aucun",
+      "masteryOfForce": "Aucun"
+    },
+    {
+      "name": "C-3PO",
+      "side": "Lumineux",
+      "planet": "Tatooine",
+      "species": "Droid",
+      "lightsaberColor": "Aucun",
+      "masteryOfForce": "Aucun"
+    }
+  ]
+}

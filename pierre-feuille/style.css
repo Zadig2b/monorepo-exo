@@ -1,0 +1,131 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#score {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10em;
+}
+
+#scoreJoueur,
+#scoreOrdi {
+  border: 2px solid grey;
+  background-color: black;
+  color: yellow;
+  padding: 5px;
+  font-family: "DSEG7 Classic Mini";
+}
+
+#choices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 500px;
+}
+
+#card-img {
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+.img-choices {
+  width: 100px;
+  height: 100px;
+  /* border: 2px solid black; */
+}
+
+#result-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#sub-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
+}
+
+#result {
+  font-weight: bold;
+  font-size: large;
+  margin: 10px;
+}
+
+#rejouer {
+  margin: 10px;
+  font-weight: bold;
+  min-height: 50px;
+  min-width: 100px;
+  cursor: pointer;
+  border: 2px solid black;
+  color: wheat;
+  border-radius: 10px;
+  background-color: rgb(54, 54, 166);
+}
+
+#rejouer:hover {
+  color: rgb(224, 172, 74);
+  background-color: rgb(127, 108, 221);
+}
+
+#botChoice,
+#playerChoice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#bottom-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 5vh;
+}
+
+@font-face {
+  font-family: "DSEG7 Classic Mini";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/dseg7-classic-mini@latest/latin-400-normal.woff2)
+      format("woff2"),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/dseg7-classic-mini@latest/latin-400-normal.woff)
+      format("woff");
+}
+
+/* RESPONSIVE - Adaptation sur petits écrans */
+@media (max-height: 675px) {
+  #card-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .img-choices {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 675px) {
+    #sub-container{
+        gap: 0px;
+    }
+  }
