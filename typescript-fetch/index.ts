@@ -1,14 +1,15 @@
 import { fetchUsers, fetchPostsByUserId } from "./api.js";
-import { displayUser, displayPostsForUser } from "./display.js";
-import { User } from "./types";
+import { renderUser } from "./display.js";
 
-async function main(): Promise<void> {
-  const users: User[] = await fetchUsers();
+async function main() {
+  const container = document.getElementById("user-list");
+  if (!container) return;
 
+  const users = await fetchUsers();
   for (const user of users) {
-    displayUser(user);
     const posts = await fetchPostsByUserId(user.id);
-    displayPostsForUser(user, posts);
+    const card = renderUser(user, posts);
+    container.appendChild(card);
   }
 }
 

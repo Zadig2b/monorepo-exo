@@ -1,18 +1,20 @@
-export function displayUser(user) {
-    console.log(`👤 Utilisateur : ${user.name}`);
-    console.log(`📧 Email : ${user.email}`);
-    console.log(`🆔 ID : ${user.id} | 👨‍💻 Pseudo : ${user.username}`);
-}
-export function displayPost(post) {
-    console.log(`\n📌 ${post.title}`);
-    console.log(`📝 ${post.body}`);
-}
-export function displayPostsForUser(user, posts) {
-    console.log(`\n====== 📚 Articles de ${user.name} ======`);
-    if (posts.length === 0) {
-        console.log("Aucun post pour cet utilisateur.");
-    }
-    else {
-        posts.forEach(displayPost);
-    }
+export function renderUser(user, posts) {
+    const div = document.createElement("div");
+    div.className = "col-md-6";
+    const postItems = posts.map(post => `
+    <div class="border rounded p-2 mb-2 bg-white shadow-sm">
+      <h5>${post.title}</h5>
+      <p>${post.body}</p>
+    </div>
+  `).join("");
+    div.innerHTML = `
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h4 class="card-title">${user.name}</h4>
+        <h6 class="card-subtitle text-muted">@${user.username} • ${user.email}</h6>
+        <div class="mt-3">${postItems}</div>
+      </div>
+    </div>
+  `;
+    return div;
 }
