@@ -2,13 +2,18 @@
     "name": "monorepo-exo",
     "version": "1.0.0",
     "description": "Tableau de bord GitHub Pages pour les exercices en monorepo",
-    "main": "generate-dashboard.js",
+    "main": "dist/generate-dashboard.js",
     "type": "module",
     "scripts": {
-      "build:dashboard": "node generate-dashboard.js"
+        "build": "tsc",
+        "start": "node dist/generate-dashboard.js",
+        "build:dashboard": "npm run build && npm run start"
     },
     "keywords": [],
-    "author": "",
-    "license": "MIT"
-  }
-  
+    "author": "Romain Dugeay",
+    "license": "CC-BY-4.0",
+    "devDependencies": {
+        "@types/node": "^22.15.2",
+        "typescript": "^5.8.3"
+    }
+}
