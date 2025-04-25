@@ -1,38 +1,33 @@
 // scripts/generate-dashboard.js
-import { readdirSync, existsSync, readFileSync, writeFileSync } from "fs";
+import { readdirSync, writeFileSync } from "fs";
 import { join } from "path";
 import { findHtmlEntry } from "./utils/detect-entry.js";
 import { detectFramework } from "./utils/detect-framework.js";
 import { detectGitHubRepo } from "./utils/detect-repo.js";
 import { getFrameworkIcon } from "./utils/framework-icons.js";
-import { generateCardHTML } from "./utils/template.js";
-
 const ROOT_DIR = "projets";
 const outputScriptPath = join(".", "script.js");
-
 const folders = readdirSync(ROOT_DIR, { withFileTypes: true })
-  .filter((dirent) => dirent.isDirectory())
-  .map((dirent) => {
+    .filter((dirent) => dirent.isDirectory())
+    .map((dirent) => {
     const folderPath = join(ROOT_DIR, dirent.name);
     const entry = findHtmlEntry(folderPath);
-    if (!entry) return null;
-
+    if (!entry)
+        return null;
     const framework = detectFramework(folderPath);
     const github = detectGitHubRepo(folderPath);
     const icon = getFrameworkIcon(framework);
-
     return {
-      name: dirent.name.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
-      folder: dirent.name,
-      path: join(ROOT_DIR, dirent.name, entry),
-      framework,
-      github,
-      icon
+        name: dirent.name.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
+        folder: dirent.name,
+        path: join(ROOT_DIR, dirent.name, entry),
+        framework,
+        github,
+        icon
     };
-  })
-  .filter(Boolean);
-
-  const output = `// script.js - Généré automatiquement
+})
+    .filter(Boolean);
+const output = `// script.js - Généré automatiquement
 
   const projects = ${JSON.stringify(folders, null, 2)};
   
@@ -67,7 +62,5 @@ const folders = readdirSync(ROOT_DIR, { withFileTypes: true })
     grid.appendChild(col);
   });
   `;
-  
-  writeFileSync(outputScriptPath, output);
-  console.log(`✅ script.js généré avec ${folders.length} projets.`);
-  
+writeFileSync(outputScriptPath, output);
+console.log(`✅ script.js généré avec ${folders.length} projets.`);
