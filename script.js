@@ -90,6 +90,14 @@
     "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">"
   },
   {
+    "name": "Test Ng 1",
+    "folder": "test-ng-1",
+    "path": "projets\\test-ng-1\\src\\index.html",
+    "framework": "Angular",
+    "github": null,
+    "icon": "<img src=\"assets\\framework-icons\\Angular.svg\" alt=\"Angular logo\" width=\"20\" height=\"20\">"
+  },
+  {
     "name": "Todolist",
     "folder": "todolist",
     "path": "projets\\todolist\\index.html",
