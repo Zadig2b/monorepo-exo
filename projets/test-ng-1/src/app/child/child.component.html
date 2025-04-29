@@ -1,1 +1,11 @@
-<p>{{hello}}</p>
+<!-- INTERPOLATION -->
+<h1>Bienvenue, {{ username }} !</h1>
+
+<!-- PROPERTY BINDING -->
+<img src="assets/images/test.png" alt=" de profil" width="150">
+
+<!-- EVENT BINDING -->
+<button (click)="updateUsername('Bob')">Changer de nom en Bob</button>
+
+<!-- TWO-WAY BINDING -->
+<input [(ngModel)]="username" placeholder="Votre nom">
