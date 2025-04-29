@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms'; // <-- Ajouté
 export class ChildComponent {
   hello = 'Hello';
   username: string = 'Alice';
-  profilePictureUrl: string = 'assets/images/tiger.webp';
+  profilePictureUrl = 'assets/images/tiger.webp';
 
   updateUsername(newName: string) {
     this.username = newName;
