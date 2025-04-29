@@ -2,6 +2,14 @@
 
   const projects = [
   {
+    "name": "Angular Exo1",
+    "folder": "angular-exo1",
+    "path": "projets\\angular-exo1\\src\\index.html",
+    "framework": "Angular",
+    "github": null,
+    "icon": "<img src=\"assets\\framework-icons\\Angular.svg\" alt=\"Angular logo\" width=\"20\" height=\"20\">"
+  },
+  {
     "name": "Array Filter",
     "folder": "array-filter",
     "path": "projets\\array-filter\\index.html",
