@@ -5,6 +5,7 @@
     "main": "dist/generate-dashboard.js",
     "type": "module",
     "scripts": {
+        "prepare": "cp hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit",
         "build": "tsc",
         "start": "node dist/generate-dashboard.js",
         "build:dashboard": "npm run build && npm run start"

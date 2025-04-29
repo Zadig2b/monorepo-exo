@@ -1,0 +1,9 @@
+#!/bin/sh
+echo "🔵 Compilation TypeScript en cours..."
+npx tsc
+
+echo "🟢 Génération automatique du dashboard..."
+node dist/generate-dashboard.js
+
+# Si tout s'est bien passé, ajouter les fichiers modifiés
+git add script.js
