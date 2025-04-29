@@ -1,1 +1,11 @@
 <p>todolist works!</p>
+<input [(ngModel)]="newTask" placeholder="ajouter une tâche" />
+<button (click)="addTask()">Ajouter</button>
+<ul>
+  @for (task of tasks; track $index) {
+  <li>
+    {{ task }}
+    <button (click)="deleteTask($index)">Supprimer</button>
+  </li>
+  }
+</ul>
