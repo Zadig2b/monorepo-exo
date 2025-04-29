@@ -1,11 +1,18 @@
-<p>todolist works!</p>
-<input [(ngModel)]="newTask" placeholder="ajouter une tâche" />
-<button (click)="addTask()">Ajouter</button>
-<ul>
-  @for (task of tasks; track $index) {
-  <li>
-    {{ task }}
-    <button (click)="deleteTask($index)">Supprimer</button>
-  </li>
-  }
-</ul>
+<div class="container my-4">
+    <h1 class="text-center mb-4">Ma ToDo List 📝</h1>
+  
+    <div class="input-group mb-3">
+      <input [(ngModel)]="newTask" type="text" class="form-control" placeholder="Ajouter une nouvelle tâche">
+      <button (click)="addTask()" class="btn btn-success">Ajouter</button>
+    </div>
+  
+    <div class="list-group">
+      <app-task 
+        *ngFor="let task of tasks" 
+        [task]="task"
+        (toggle)="toggleCompleted(task.id)" 
+        (delete)="deleteTask(task.id)">
+      </app-task>
+    </div>
+  </div>
+  
