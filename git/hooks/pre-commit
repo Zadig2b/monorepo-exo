@@ -1,0 +1,18 @@
+#!/bin/sh
+
+echo "📦 Compilation TypeScript..."
+if ! npx tsc; then
+  echo "❌ Erreur lors de la compilation TypeScript. Commit annulé."
+  exit 1
+fi
+
+echo "⚙️  Génération automatique du dashboard..."
+if ! node dist/generate-dashboard.js; then
+  echo "❌ Erreur lors de la génération du dashboard. Commit annulé."
+  exit 1
+fi
+
+echo "➕ Ajout de script.data.js au commit..."
+git add script.data.js
+
+echo "✅ Pré-commit terminé avec succès."

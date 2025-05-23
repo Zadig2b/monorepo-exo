@@ -7,7 +7,7 @@ export const projects = [
     "framework": "Vanilla",
     "github": null,
     "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
-    "readmepath": "projets/array-filter/README.md"
+    "readmepath": "/projets/array-filter/README.md"
   },
   {
     "name": "Form",
@@ -16,7 +16,7 @@ export const projects = [
     "framework": "Vanilla",
     "github": null,
     "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
-    "readmepath": "projets/form/README.md"
+    "readmepath": "/projets/form/README.md"
   },
   {
     "name": "Game Heroes",
@@ -25,7 +25,7 @@ export const projects = [
     "framework": "Vanilla",
     "github": null,
     "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
-    "readmepath": "projets/game-heroes/README.md"
+    "readmepath": "/projets/game-heroes/README.md"
   },
   {
     "name": "Js1",
@@ -34,7 +34,7 @@ export const projects = [
     "framework": "Vanilla",
     "github": null,
     "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
-    "readmepath": "projets/js1/README.md"
+    "readmepath": "/projets/js1/README.md"
   },
   {
     "name": "Meal Api",
@@ -43,7 +43,7 @@ export const projects = [
     "framework": "Vanilla",
     "github": null,
     "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
-    "readmepath": "projets/meal-api/README.md"
+    "readmepath": "/projets/meal-api/README.md"
   },
   {
     "name": "News Frontend",
@@ -52,7 +52,7 @@ export const projects = [
     "framework": "Vanilla",
     "github": null,
     "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
-    "readmepath": "projets/news-frontend/README.md"
+    "readmepath": "/projets/news-frontend/README.md"
   },
   {
     "name": "Perfume Card Design",
@@ -61,7 +61,7 @@ export const projects = [
     "framework": "Vanilla",
     "github": null,
     "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
-    "readmepath": "projets/perfume-card-design/README.md"
+    "readmepath": "/projets/perfume-card-design/README.md"
   },
   {
     "name": "Pierre Feuille",
@@ -70,7 +70,7 @@ export const projects = [
     "framework": "Vanilla",
     "github": null,
     "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
-    "readmepath": "projets/pierre-feuille/README.md"
+    "readmepath": "/projets/pierre-feuille/README.md"
   },
   {
     "name": "Plus Ou Moins",
@@ -79,7 +79,7 @@ export const projects = [
     "framework": "Vanilla",
     "github": null,
     "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
-    "readmepath": "projets/plus-ou-moins/README.md"
+    "readmepath": "/projets/plus-ou-moins/README.md"
   },
   {
     "name": "Positions Css",
@@ -88,7 +88,7 @@ export const projects = [
     "framework": "Vanilla",
     "github": null,
     "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
-    "readmepath": "projets/positions-css/README.md"
+    "readmepath": "/projets/positions-css/README.md"
   },
   {
     "name": "Recipe",
@@ -97,7 +97,7 @@ export const projects = [
     "framework": "Vanilla",
     "github": null,
     "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
-    "readmepath": "projets/recipe/README.md"
+    "readmepath": "/projets/recipe/README.md"
   },
   {
     "name": "Star Wars",
@@ -106,7 +106,7 @@ export const projects = [
     "framework": "Vanilla",
     "github": null,
     "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
-    "readmepath": "projets/star-wars/README.md"
+    "readmepath": "/projets/star-wars/README.md"
   },
   {
     "name": "Todolist",
@@ -115,7 +115,7 @@ export const projects = [
     "framework": "Vanilla",
     "github": null,
     "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
-    "readmepath": "projets/todolist/README.md"
+    "readmepath": "/projets/todolist/README.md"
   },
   {
     "name": "Typescript Fetch",
@@ -124,6 +124,6 @@ export const projects = [
     "framework": "Vanilla",
     "github": null,
     "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
-    "readmepath": "projets/typescript-fetch/readme.md"
+    "readmepath": "/projets/typescript-fetch/readme.md"
   }
 ];

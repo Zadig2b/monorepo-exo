@@ -8,7 +8,6 @@ import { ProjectCard } from "./types";
 
 const ROOT_DIR = "projets";
 const outputDataPath = join(".", "script.data.js");
-const outputUiPath = join(".", "script.ui.js");
 
 const folders: ProjectCard[] = readdirSync(ROOT_DIR, { withFileTypes: true })
   .filter((dirent) => dirent.isDirectory())
@@ -48,20 +47,6 @@ export const projects = ${JSON.stringify(folders, null, 2)};
 `;
 writeFileSync(outputDataPath, dataOutput);
 
-// Génération de `script.ui.js`
-const uiOutput = `// script.ui.js
-import { projects } from './script.data.js';
-import { generateCardHTML } from './scripts/utils/template.js';
 
-const grid = document.getElementById("projects-grid");
 
-projects.forEach((project) => {
-  const col = document.createElement("div");
-  col.className = "col";
-  col.innerHTML = generateCardHTML(project);
-  grid.appendChild(col);
-});
-`;
-writeFileSync(outputUiPath, uiOutput);
-
-console.log("✅ Fichiers script.data.js et script.ui.js générés.");
+console.log("✅ Fichiers script.data.js généré.");
