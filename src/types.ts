@@ -5,5 +5,6 @@ export interface ProjectCard {
     framework: string;
     github: string | null;
     icon: string;
+    readmepath: string | null;
   }
   

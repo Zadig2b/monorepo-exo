@@ -20,26 +20,36 @@ const folders = readdirSync(ROOT_DIR, { withFileTypes: true })
     const framework = detectFramework(folderPath);
     const github = detectGitHubRepo(folderPath);
     const icon = getFrameworkIcon(framework);
+    const readmeFile = readdirSync(folderPath).find(
+      (file) => file.toLowerCase() === "readme.md"
+    );
+
+    const readmePath = readmeFile
+      ? `/projets/${dirent.name}/${readmeFile}`
+      : null;
 
     return {
-      name: dirent.name.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
+      name: dirent.name
+        .replace(/[-_]/g, " ")
+        .replace(/\b\w/g, (c) => c.toUpperCase()),
       folder: dirent.name,
       path: join(ROOT_DIR, dirent.name, entry),
       framework,
       github,
-      icon
+      icon,
+      readmePath,
     };
   })
   .filter(Boolean);
 
-  const output = `// script.js - Généré automatiquement
+const output = `// script.js - Généré automatiquement
 
   const projects = ${JSON.stringify(folders, null, 2)};
   
   const grid = document.getElementById("projects-grid");
   
   // Fonction d’injection HTML
-  function generateCardHTML({ name, folder, path, framework, github, icon }) {
+  function generateCardHTML({ name, folder, path, framework, github, icon, readmepath }) {
     return \`
       <div class="card card-project h-100 shadow-sm">
         <div class="card-body d-flex flex-column">
@@ -54,6 +64,8 @@ const folders = readdirSync(ROOT_DIR, { withFileTypes: true })
           <div class="mt-auto d-flex justify-content-between">
             <a href="\${path}" class="btn btn-primary">Ouvrir</a>
             \${github ? \`<a href="\${github}" target="_blank" class="btn btn-outline-dark">GitHub</a>\` : ""}
+                      \${readmepath ? \`<a href="\${readmepath}" class="btn btn-outline-secondary">README</a>\` : ""}
+
           </div>
         </div>
       </div>
@@ -67,7 +79,6 @@ const folders = readdirSync(ROOT_DIR, { withFileTypes: true })
     grid.appendChild(col);
   });
   `;
-  
-  writeFileSync(outputScriptPath, output);
-  console.log(`✅ script.js généré avec ${folders.length} projets.`);
-  
+
+writeFileSync(outputScriptPath, output);
+console.log(`✅ script.js généré avec ${folders.length} projets.`);

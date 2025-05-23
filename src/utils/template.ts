@@ -6,7 +6,15 @@ import { ProjectCard } from "../types";
  * @param p - projet enrichi
  * @returns HTML à insérer dans le DOM
  */
-export function generateCardHTML({ name, folder, path, framework, github, icon }: ProjectCard): string {
+export function generateCardHTML({
+  name,
+  folder,
+  path,
+  framework,
+  github,
+  icon,
+  readmepath
+}: ProjectCard): string {
   return `
     <div class="card card-project h-100 shadow-sm">
       <div class="card-body d-flex flex-column">
@@ -18,9 +26,10 @@ export function generateCardHTML({ name, folder, path, framework, github, icon }
           </span>
         </h5>
         <p class="card-text text-muted">Voir le projet "${folder}"</p>
-        <div class="mt-auto d-flex justify-content-between">
+        <div class="mt-auto d-flex flex-wrap gap-2 justify-content-between">
           <a href="${path}" class="btn btn-primary">Ouvrir</a>
           ${github ? `<a href="${github}" target="_blank" class="btn btn-outline-dark">GitHub</a>` : ""}
+          ${readmepath ? `<a href="${readmepath}" class="btn btn-outline-secondary">README</a>` : ""}
         </div>
       </div>
     </div>

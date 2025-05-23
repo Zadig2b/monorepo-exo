@@ -7,7 +7,8 @@
     "path": "projets\\array-filter\\index.html",
     "framework": "Vanilla",
     "github": null,
-    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">"
+    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
+    "readmePath": "/projets/array-filter/README.md"
   },
   {
     "name": "Form",
@@ -15,7 +16,8 @@
     "path": "projets\\form\\index.html",
     "framework": "Vanilla",
     "github": null,
-    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">"
+    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
+    "readmePath": "/projets/form/README.md"
   },
   {
     "name": "Game Heroes",
@@ -23,7 +25,17 @@
     "path": "projets\\game-heroes\\index.html",
     "framework": "Vanilla",
     "github": null,
-    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">"
+    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
+    "readmePath": "/projets/game-heroes/README.md"
+  },
+  {
+    "name": "Js1",
+    "folder": "js1",
+    "path": "projets\\js1\\index.html",
+    "framework": "Vanilla",
+    "github": null,
+    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
+    "readmePath": "/projets/js1/README.md"
   },
   {
     "name": "Meal Api",
@@ -31,7 +43,8 @@
     "path": "projets\\meal-api\\index.html",
     "framework": "Vanilla",
     "github": null,
-    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">"
+    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
+    "readmePath": "/projets/meal-api/README.md"
   },
   {
     "name": "News Frontend",
@@ -39,7 +52,8 @@
     "path": "projets\\news-frontend\\index.html",
     "framework": "Vanilla",
     "github": null,
-    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">"
+    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
+    "readmePath": "/projets/news-frontend/README.md"
   },
   {
     "name": "Perfume Card Design",
@@ -47,7 +61,8 @@
     "path": "projets\\perfume-card-design\\index.html",
     "framework": "Vanilla",
     "github": null,
-    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">"
+    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
+    "readmePath": "/projets/perfume-card-design/README.md"
   },
   {
     "name": "Pierre Feuille",
@@ -55,7 +70,8 @@
     "path": "projets\\pierre-feuille\\index.html",
     "framework": "Vanilla",
     "github": null,
-    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">"
+    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
+    "readmePath": "/projets/pierre-feuille/README.md"
   },
   {
     "name": "Plus Ou Moins",
@@ -63,7 +79,8 @@
     "path": "projets\\plus-ou-moins\\index.html",
     "framework": "Vanilla",
     "github": null,
-    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">"
+    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
+    "readmePath": "/projets/plus-ou-moins/README.md"
   },
   {
     "name": "Positions Css",
@@ -71,7 +88,8 @@
     "path": "projets\\positions-css\\index.html",
     "framework": "Vanilla",
     "github": null,
-    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">"
+    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
+    "readmePath": "/projets/positions-css/README.md"
   },
   {
     "name": "Recipe",
@@ -79,7 +97,8 @@
     "path": "projets\\recipe\\index.html",
     "framework": "Vanilla",
     "github": null,
-    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">"
+    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
+    "readmePath": "/projets/recipe/README.md"
   },
   {
     "name": "Star Wars",
@@ -87,7 +106,8 @@
     "path": "projets\\star-wars\\index.html",
     "framework": "Vanilla",
     "github": null,
-    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">"
+    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
+    "readmePath": "/projets/star-wars/README.md"
   },
   {
     "name": "Todolist",
@@ -95,7 +115,8 @@
     "path": "projets\\todolist\\index.html",
     "framework": "Vanilla",
     "github": null,
-    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">"
+    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
+    "readmePath": "/projets/todolist/README.md"
   },
   {
     "name": "Typescript Fetch",
@@ -103,14 +124,15 @@
     "path": "projets\\typescript-fetch\\public\\index.html",
     "framework": "Vanilla",
     "github": null,
-    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">"
+    "icon": "<img src=\"assets\\framework-icons\\Vanilla.svg\" alt=\"Vanilla logo\" width=\"20\" height=\"20\">",
+    "readmePath": "/projets/typescript-fetch/readme.md"
   }
 ];
   
   const grid = document.getElementById("projects-grid");
   
   // Fonction d’injection HTML
-  function generateCardHTML({ name, folder, path, framework, github, icon }) {
+  function generateCardHTML({ name, folder, path, framework, github, icon, readmepath }) {
     return `
       <div class="card card-project h-100 shadow-sm">
         <div class="card-body d-flex flex-column">
@@ -125,6 +147,8 @@
           <div class="mt-auto d-flex justify-content-between">
             <a href="${path}" class="btn btn-primary">Ouvrir</a>
             ${github ? `<a href="${github}" target="_blank" class="btn btn-outline-dark">GitHub</a>` : ""}
+                      ${readmepath ? `<a href="${readmepath}" class="btn btn-outline-secondary">README</a>` : ""}
+
           </div>
         </div>
       </div>
